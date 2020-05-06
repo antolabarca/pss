@@ -1,0 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
+#include "t3.h"
+
+... programe aca recorte y recortar ...
