@@ -1,0 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#include "t4.h"
+
+... programe aca la funcion eliminar rango ...
