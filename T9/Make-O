@@ -1,0 +1,16 @@
+CFLAGS= -O2 -Wall -pedantic -std=c99
+LDFLAGS=
+
+all: test-t9a test-t9b
+
+test-t9.o t9a.o t9b.o: maleta.h
+
+test-t9a: t9a.o test-t9.o
+	gcc $(LDFLAGS) t9a.o test-t9.o -o test-t9a
+
+test-t9b: t9b.o test-t9.o
+	gcc $(LDFLAGS) t9b.o test-t9.o -o test-t9b
+
+clean:
+	rm -f *.o
+	rm -f test-t9a test-t9b
